@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Subjects</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Segoe UI", sans-serif;
+      background: #0f1117;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    header {
+      padding: 20px 40px;
+      background-color: #1f1f1f;
+      border-bottom: 2px solid #00ffc3;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+      position: relative;
+    }
+
+    .header-content {
+      position: relative;
+    }
+
+    .page-title {
+      color: #00ffc3;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .home-button {
+      position: absolute;
+      right: 40px;
+      top: 0px;
+      background-color: transparent;
+      border: 2px solid #00ffc3;
+      color: #00ffc3;
+      padding: 10px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+
+    .home-button:hover {
+      background-color: #00ffc3;
+      color: #1f1f1f;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px 20px;
+    }
+
+    .button-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 20px;
+      width: 100%;
+      max-width: 700px;
+    }
+
+    .subject-btn {
+      padding: 15px 20px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 10px;
+      background: #1c1f26;
+      color: #fff;
+      cursor: pointer;
+      transition: 0.3s;
+      text-decoration: none;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      display: block;
+    }
+
+    .subject-btn:hover {
+      background: #00ffc3;
+      color: #0f1117;
+      transform: scale(1.05);
+    }
+
+    footer {
+      background: #1f1f1f;
+      padding: 15px;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #888;
+    }
+
+    /* Mobile responsive */
+    @media (max-width: 600px) {
+      .page-title {
+        font-size: 22px;
+      }
+
+      .home-button {
+        font-size: 14px;
+        padding: 8px 16px;
+        right: 20px;
+        top: 0px;
+      }
+
+      .subject-btn {
+        font-size: 0.95rem;
+        padding: 12px 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <h1 class="page-title">Select Subject</h1>
+      <a href="index.html" class="home-button">Home</a>
+    </div>
+  </header>
+
+  <main>
+    <div class="button-container">
+      <!-- <a href="#" class="subject-btn">Math</a> -->
+      <a href="physics.html" class="subject-btn">Physics</a>
+      <a href="#" class="subject-btn">Chemistry</a>
+      <a href="#" class="subject-btn">Biology</a>
+      <a href="english.html" class="subject-btn" >English</a>
+      <a href="cs.html" class="subject-btn">Computer Science</a>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Pratham Patel | All rights reserved
+  </footer>
+</body>
+</html>
